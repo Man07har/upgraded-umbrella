@@ -1,9 +1,11 @@
 import React from "react";
 import ImageOne from "../assets/image-1.jpg";
 import ImageTwo from "../assets/image-2.jpg";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
+    <div>
     <div className="bg-gray-100">
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -62,6 +64,7 @@ const Home = () => {
         </div>
       </main>
    
+    </div>
     </div>
   );
 };

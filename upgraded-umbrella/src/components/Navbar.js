@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.jpg';
 import '../App.css'
 import 'tailwindcss/tailwind.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -12,10 +13,10 @@ function Navbar() {
             <img src={logo} className="h-8 w-8" alt="Logo" />
           </div>
           <div className="flex">
-            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
-            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
-            <a href="#" className="text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            <Link to="/" className="text-white px-3 py-2 rounded-md text-sm font-medium">Home</Link>
+            <Link to="/Features" className="text-white px-3 py-2 rounded-md text-sm font-medium">Features</Link>
+            <Link to="/Pricing" className="text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</Link>
+            <Link to="/Contact" className="text-white px-3 py-2 rounded-md text-sm font-medium">Contact</Link>
           </div>
         </div>
       </div>
